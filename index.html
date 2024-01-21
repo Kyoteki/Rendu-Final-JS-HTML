@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Rendu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Mise en forme CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Style -->
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">Ca, c'est la Slide 1</div>
+      <div class="swiper-slide">Celle-ci, du coup, c'est la 2</div>
+      <div class="swiper-slide">Après la 2, la 3</div>
+      <div class="swiper-slide">Si on sait compter, on devine que celle-là, c'est la 4</div>
+      <div class="swiper-slide">Bien sûr, la 5</div>
+      <div class="swiper-slide">Roulement de tambours... 6</div>
+      <div class="swiper-slide">Je vous le donne en mille, 7</div>
+      <div class="swiper-slide">Evidemment, la 8</div>
+      <div class="swiper-slide">Et pour finir, la 9</div>
+      <div class="swiper-slide">Et il n'y a plus rien après</div>
+      <div class="swiper-slide">Rien</div>
+      <div class="swiper-slide">Je vous l'assure, il n'y a plus rien après</div>
+      <div class="swiper-slide">Inutile d'insister</div>
+      <div class="swiper-slide">Il n'y a rien</div>
+      <div class="swiper-slide">Nothing</div>
+      <div class="swiper-slide">Nada</div>
+      <div class="swiper-slide">Niente</div>
+      <div class="swiper-slide">Nichts</div>
+      <div class="swiper-slide">Non, sérieusement, c'est fatiguant, à force</div>
+      <div class="swiper-slide">C'est pas bientôt fini ?</div>
+      <div class="swiper-slide">...</div>
+      <div class="swiper-slide">...</div>
+      <div class="swiper-slide">Bon, très bien</div>
+      <div class="swiper-slide">Vous avez gagné</div>
+      <div class="swiper-slide">J'avoue</div>
+      <div class="swiper-slide">En fait,</div>
+      <div class="swiper-slide">il y a effectivement quelque chose</div>
+      <div class="swiper-slide">Je ne voulais juste pas que vous le voyiez</div>
+      <div class="swiper-slide">Comme vous avez l'air de ne pas vouloir lâcher l'affaire,</div>
+      <div class="swiper-slide">je vais vous révéler ce qu'il y a après</div>
+      <div class="swiper-slide">Mais je préfères vous mettre en garde</div>
+      <div class="swiper-slide">C'est quelque chose qui dépasse l'entendement</div>
+      <div class="swiper-slide">Quelque chose que vous ne pourrez surement pas croire</div>
+      <div class="swiper-slide">Même si vous le voyez de vos yeux</div>
+      <div class="swiper-slide">Alors, tachez d'être préparé</div>
+      <div class="swiper-slide">...</div>
+      <div class="swiper-slide">...</div>
+      <div class="swiper-slide">Prêts ?</div>
+      <div class="swiper-slide">Vous ne pourrez plus faire marche-arrière</div>
+      <div class="swiper-slide">Je vous aurais prévenu</div>
+      <div class="swiper-slide">Attention...</div>
+      <div class="swiper-slide">3...</div>
+      <div class="swiper-slide">2...</div>
+      <div class="swiper-slide">1...</div>
+      <div class="swiper-slide">0,5...</div>
+      <div class="swiper-slide">...</div>
+      <div class="swiper-slide">Rien.</div>
+      <div class="swiper-slide">Vous aviez réellement cru que j'allais vous le révéler ?</div>
+      <div class="swiper-slide">Vous pourrez fouiller cette page autant que vous le pourrez, vous ne trouverez rien</div>
+      <div class="swiper-slide">Croyez moi</div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+  <!-- Tab -->
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'Section1')">Section1</button>
+        <button class="tablinks" onclick="openCity(event, 'Section2')">Section2</button>
+        <button class="tablinks" onclick="openCity(event, 'Section3')">Section3</button>
+    </div>
+  
+  <!-- Contenu des Tab  -->
+    <div id="Section1" class="tabcontent">
+        <h3>Section1</h3>
+        <p>Cette section est vide</p>
+    </div>
+  
+    <div id="Section2" class="tabcontent">
+        <h3>Section2</h3>
+        <p>Celle ci est vide aussi</p>
+    </div>
+  
+    <div id="Section3" class="tabcontent">
+        <h3>Section3</h3>
+        <p>Celle-là aussi, ne cherchez pas</p>
+    </div>
+    <div class="message-error">
+      <ul></ul>
+    </div>
+    <div class="message-success">
+      J'avais dis de ne pas le faire !
+    </div>
+    <form action="" method="POST" enctype="multipart/form-data">
+      <div>
+        <label for="pseudo">N'entrez pas votre pseudo</label>
+        <input type="text" name="pseudo" id="pseudo">
+      </div>
+      <div>
+        <label for="email">N'entrez surtout pas votre email</label>
+        <input type="email" name="email" id="email">
+      </div>
+      <div>
+        <label for="password">Ne choisissez pas de mot de passe</label>
+        <input type="password" name="password" id="password">
+      </div>
+      <div>
+        <label for="password2">Ne confirmer pas le mot de passe que je vous avais pourtant dis de ne pas entrer</label>
+        <input type="password" name="password2" id="password2">
+      </div>
+      <button type="submit">Ne vous inscrivez pas</button>
+    </form>
+  <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+  <!-- Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+        navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+        }
+        })
+    </script>
+</body>
+</html>
